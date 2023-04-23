@@ -1,0 +1,20 @@
+:root{
+--color-orange:#EC878D;
+--color-pink:#D96C9F;
+--color-blue:#1A0D73;
+--main-bg-color:#110A40;
+--main-text: color:#F2F2F2;
+}
+[tema="dark"]{
+    --color-orange: #F27830;
+    --color-pink: #c43f6e;
+    --color-blue: #2980F2;
+    --color-bg-main: #DCEAF2;
+    --color-white: #092C73;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
