@@ -15,8 +15,7 @@
     --font-size-xl: 4.725rem;
 
     --font-family-primary: 'Nothing You Could Do', cursive;
-    --font-family-secondary: 'Source Sans Pro', sans-serif;
-    --font-family-tertiary: 'Titillium Web', sans-serif;
+    --font-family-secondary: 'Victor Mono', monospace;
 }
 
 [theme="light"] {
@@ -41,7 +40,8 @@ html {
 body {
     background-color: var(--color-bg);
     color: var(--color-main-text);
-    font-family: var(--font-family-tertiary);
+    font-family: var(--font-family-secondary);
+    font-style: normal;
     font-size: var(--font-size-m);
 }
 
@@ -51,7 +51,7 @@ h3 {
     color: var(--color-title);
     text-align: center;
     font-family: var(--font-family-primary);
-    font-weight: 100;
+    font-weight: lighter;
 }
 
 h1 {
@@ -68,9 +68,8 @@ h3 {
 
 a {
     font-family: var(--font-family-secondary);
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--color-title-2);
-    font-weight: bolder;
 }
 
 ul {
