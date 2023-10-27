@@ -6,3 +6,19 @@ header{
     justify-content: flex-end;
     flex-direction: row;
 }
+.nav{
+    width: 70%;
+}
+.nav__list{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.list__item a{
+    display: block;
+    height: 100%;
+}
