@@ -103,7 +103,9 @@ header {
 }
 
 /* main */
-main {}
+main {
+    width: 100%;
+}
 
 /* footer */
 footer {
