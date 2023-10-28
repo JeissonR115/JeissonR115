@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home4/jeissonr/public_html
     - /bin/cp index.html $DEPLOYPATH/
-    - /bin/cp css/main.css $DEPLOYPATH/css/
-    - /bin/cp js/index.js $DEPLOYPATH/js/
+    - /bin/cp css/ $DEPLOYPATH/css/
+    - /bin/cp js/ $DEPLOYPATH/js/
