@@ -1,74 +1,43 @@
-/* .card {
-    width: 225px;
-    height: 225px;
-    color: var(--color-bg-2);
-    display: flex;
-    overflow: hidden;
-    background-color: var(--color-secondary-text);
-    transform-origin: center;
-}
-.card:hover{
-    animation: rotateY 4s linear forwards;
-}
-.card__side {
-    width: 100%;
-    display: none; 
-    transition: 10s;
-    display: none;
-}
-
-.card__side:nth-child(1) {
-    transition: 10s;
-    display: flex; 
-}
-
-.card:hover .card__side:nth-child(1) { 
-    transition: 10s;
-    display: none;
-} */
-/*
-.card:hover .card__side:nth-child(2) {  Muestra el segundo lado al hacer hover en la tarjeta 
-    transform: scaleX(-1);
-    display: flex;
-}*/
-
-@keyframes rotateY {
-    from {
-        transform: rotateY(0deg); /* Empieza sin rotación en el eje Y */
-    }
-    to {
-        transform: rotateY(180deg); /* Termina con una rotación completa en el eje Y (360 grados) */
-    }
-}
-
 .card {
     width: 300px;
     height: 300px;
-    perspective: 1000px; /* Ajusta la perspectiva para el efecto 3D */
-    transform: rotateY(0deg);
-    transition: transform 0.5s ease;
-  }
-  
-  .card__side:nth-child(1) , .card__side:nth-child(2)  {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden; /* Oculta la cara trasera cuando la tarjeta está girada */
+    padding: 5%;
+
+    position: relative;
+    perspective: 240rem;
+}
+
+.card__side {
+    width: 90%;
+    height: 90%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
-  }
-  
-  .card__side:nth-child(2)  {
-    transform: rotateY(180deg); /* Gira la cara trasera 180 grados para que no sea visible inicialmente */
-  }
-  
-  /* Agrega un efecto de transición para suavizar el giro */
-  .list__item:hover .card {
-    transform: rotateY(180deg);
-    transition: transform 0.5s ease;
-  }
-  .list__item:hover {
+
+    background-color: var(--color-bg-2);
+    border-radius: 10px;
+    position: absolute;
+
+    transition: all 1s ease;
+    backface-visibility: hidden;
+}
+.main__section:nth-child(odd) .card__side {
+    background-color: var(--color-bg);
+}
+
+.card__side--back {
+    transform: rotateY(-180deg);
     
-  }
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0deg);
+}
+
+.card__side--front {
+
+}
+.card:hover .card__side--front {
+    transform: rotateY(180deg);
+}
