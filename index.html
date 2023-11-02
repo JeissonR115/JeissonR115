@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
@@ -26,22 +27,23 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="list__item list__item--profile"><a class="item__link" href="#profile">profile</a></li>
-                <li class="list__item list__item--aboutMe"><a class="item__link" href="#about-me">aboutMe</a></li>
-                <li class="list__item list__item--studies"><a class="item__link" href="#studies">studies</a></li>
-                <li class="list__item list__item--skills"><a class="item__link" href="#skills">skills</a></li>
-                <li class="list__item list__item--projects"><a class="item__link" href="#projects">projects</a></li>
+                <li class="list__item list__item--profile typewriter-effect__container"><a class="item__link typewriter-effect" href="#profile">profile</a></li>
+                <li class="list__item list__item--aboutMe typewriter-effect__container"><a class="item__link typewriter-effect" href="#about-me">aboutMe</a></li>
+                <li class="list__item list__item--studies typewriter-effect__container"><a class="item__link typewriter-effect" href="#studies">studies</a></li>
+                <li class="list__item list__item--skills typewriter-effect__container"><a class="item__link typewriter-effect" href="#skills">skills</a></li>
+                <li class="list__item list__item--projects typewriter-effect__container"><a class="item__link typewriter-effect" href="#projects">projects</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <p id="asd"></p>
         <section id="profile" class="main__section main__section--profile">
             <div class="profile__info">
                 <h1 class="profile__name">Jeisson Rodriguez</h1>
                 <h2 class="profile__job-title">FrontendDeveloper</h2>
             </div>
             <div class="profile__img">
-                <img src="./pictures/photo_perfil (1).png" alt="imagen de perfil">
+                <img src="./pictures/profile/photo_perfil.png" alt="imagen de perfil">
             </div>
         </section>
         <section id="about-me" class="main__section main__section--about-me">
@@ -59,7 +61,7 @@
                     <div class="card card--one-side">
                         <div class="card__side">
                             <h3 class="card__title">study</h3>
-                            <div class="card__img"> <img src="" alt=""></div>
+                            <div class="card__img"> <img src="https://cm1.aminoapps.com/8167/fb3a1b17942aff4bb10eb66ccd6e596eb51b0593_375.jpg" alt=""></div>
                             <div class="card__description">
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 <p>Sit adipisci impedit veritatis repellendus consequuntur. Cumque beatae iure culpa, aliquam veritatis quos tempora velit dolorum, atque voluptates impedit et! Maiores, iure</p>
@@ -74,11 +76,11 @@
             <ul class="section__list section__list--skills">
                 <li class="list__item list__item--1">
                     <div class="card">
-                        <div class="card__side card_side--presentation">
+                        <div class="card__side card__side--front card_side--presentation">
                             <h3 class="card__title">skill</h3>
-                            <div class="card__img"> <img src="" alt=""></div>
+                            <div class="card__img"> <img src="https://cm1.aminoapps.com/8167/fb3a1b17942aff4bb10eb66ccd6e596eb51b0593_375.jpg" alt=""></div>
                         </div>
-                        <div class="card__side card__side--info">
+                        <div class="card__side card__side--back card__side--info">
                             <div class="card__description">
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 <p>Sit adipisci impedit veritatis repellendus consequuntur. Cumque beatae iure culpa, aliquam veritatis quos tempora velit dolorum, atque voluptates impedit et! Maiores, iure</p>
@@ -93,11 +95,11 @@
             <ul class="section__list section__list-projects ">
                 <li class="list__item list__item--1">
                     <div class="card">
-                        <div class="card__side card_side--presentation">
+                        <div class="card__side card__side--front card_side--presentation">
                             <h3 class="card__title">project</h3>
-                            <div class="card__img"> <img src="" alt=""></div>
+                            <div class="card__img"> <img src="https://cm1.aminoapps.com/8167/fb3a1b17942aff4bb10eb66ccd6e596eb51b0593_375.jpg" alt=""></div>
                         </div>
-                        <div class="card__side card__side--info">
+                        <div class="card__side card__side--back card__side--info">
                             <div class="card__description">
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 <p>Sit adipisci impedit veritatis repellendus consequuntur. Cumque beatae iure culpa, aliquam veritatis quos tempora velit dolorum, atque voluptates impedit et! Maiores, iure</p>
@@ -129,7 +131,7 @@
             </ul>
         </div>
     </footer>
-    
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

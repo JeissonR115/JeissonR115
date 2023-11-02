@@ -1,0 +1,47 @@
+.card {
+    width: 300px;
+    height: 300px;
+    padding: 5%;
+
+    position: relative;
+    perspective: 240rem;
+    
+}
+
+.card__side {
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    background-color: var(--color-bg-2);
+    border-radius: 10px;
+    position: absolute;
+
+    transition: all 1s ease;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.main__section:nth-child(odd) .card__side {
+    background-color: var(--color-bg);
+}
+
+.card__side--back {
+    transform: rotateY(-180deg);
+    
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0deg);
+}
+
+.card__side--front {
+
+}
+.card:hover .card__side--front {
+    transform: rotateY(180deg);
+}

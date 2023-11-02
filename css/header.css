@@ -1,0 +1,35 @@
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.nav{
+    width: 70%;
+}
+.nav__list{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+nav .list__item{
+    min-width: 50px;
+    max-width: 200px;
+}
+.typewriter-effect__container:hover a{
+    border-right: 1px solid var(--color-link);
+
+}
+
+@keyframes typing {
+    from {width: 0px;}
+}
+@keyframes bling {
+    50% {border-color: transparent;}
+}
