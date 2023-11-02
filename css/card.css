@@ -5,6 +5,7 @@
 
     position: relative;
     perspective: 240rem;
+    
 }
 
 .card__side {
@@ -14,13 +15,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    
     background-color: var(--color-bg-2);
     border-radius: 10px;
     position: absolute;
 
     transition: all 1s ease;
     backface-visibility: hidden;
+    overflow: hidden;
 }
 .main__section:nth-child(odd) .card__side {
     background-color: var(--color-bg);

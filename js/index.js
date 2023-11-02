@@ -35,7 +35,7 @@ parentElements.forEach(parentElement => {
 
     parentElement.addEventListener('mouseenter', () => {
         if (childElement) {
-            typewriterInstance = typewriter(childElement, childText);
+            typewriterInstance = typewriter(childElement, childText,75);
         }
     });
 });
