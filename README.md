@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab05l3ndGtZqyqxgTeOkmB7g2eDGyYrQp60gRu108tIEXOLQTl8tf9Jpx90UiNJEIv1Q&usqp=CAU" alt="js" width="150px"/>
-</p>
-
+![Banner](./media/Banner.jpg)
 # Hola, soy Jeisson  😊👋
 
 ## Acerca de mí
