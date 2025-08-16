@@ -1,4 +1,4 @@
-![Banner](./media/Banner.jpg)
+![Banner](./media/Banner.png)
 # Hola, soy Jeisson  😊👋
 
 ## Acerca de mí
